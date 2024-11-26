@@ -1,0 +1,53 @@
+/* 2xl */
+@media (max-width: 1536px) {
+    
+}
+
+/* xl */
+@media (max-width: 1280px) {
+
+}
+
+/* lg */
+@media (max-width: 1024px) {
+
+}
+
+/* md */
+@media (max-width: 768px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h1,p,button{
+        text-align: center;
+        margin: auto;
+    }
+}
+   
+/* sm */
+@media (max-width: 640px) {
+
+    
+}
+
+/* xs */
+@media (max-width: 500px) {
+    h1{
+        font-size: 22px;
+    }
+   
+    p{
+        margin: auto;
+        text-align: center;
+        width: 220px;
+        font-size: 12px;
+    }
+    .button button{
+        margin: auto;
+        width: 200px;
+    }
+    
+}
+

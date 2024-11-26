@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatórios</title>
+
+    <link rel="stylesheet" href="./css/reports.css">
+    <link rel="stylesheet" href="./css/responsive/responsive-reports.css">
+
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <img src="./img/logo.png" alt="Logo">
+        </div>
+        <div class="icons">
+            <a href="./maps.html">
+                <img src="./img/icons/back.svg" alt="Voltar">
+              </a>
+            <a href="index.html">
+                <img src="./img/icons/home.svg" alt="Início">
+            </a>
+            <div class="notification">
+                <img src="./img/icons/bell.svg" alt="Notificações">
+                <div class="tooltip">
+                    Você não possui notificações
+                </div>
+            </div>
+            <a href="./login.html">
+                <img src="./img/icons/profile.svg" alt="Usuário">
+                </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="reports">
+            <h1>Relatório</h1>
+            <div class="cards">
+                <div class="card">
+                    <h2>Defeitos</h2>
+                    <div class="chart-container">
+                        <span class="chart-number">10%</span>
+                        <img src="./img/graph.png" class="chart-image" alt="Gráfico de defeitos">
+                    </div>
+                    <a href="./details.html">
+                        <button>Ver detalhes</button>
+                    </a>
+                </div>
+                <div class="card">
+                    <h2>Manutenção</h2>
+                    <div class="chart-container">
+                        <span class="chart-number">60%</span>
+                        <img src="./img/graph.png" class="chart-image" alt="Gráfico de manutenção">
+                    </div>
+                    <a href="./details.html">
+                        <button>Ver detalhes</button>
+                    </a>
+                </div>
+                <div class="card">
+                    <h2>Desempenho</h2>
+                    <div class="chart-container">
+                        <span class="chart-number">90%</span>
+                        <img src="./img/graph.png" class="chart-image" alt="Gráfico de desempenho">
+                    </div>
+                    <a href="./details.html">
+                        <button>Ver detalhes</button>
+                    </a>
+                </div>
+            </div>
+        </section>              
+
+        <section class="location">
+            <h1>Local</h1>
+            <div class="location-container">
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps?q=São+Miguel,+Juazeiro+do+Norte+-+CE&output=embed" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            <div class="address">
+                <h2>Endereço para manutenção</h2>
+                    <form>                        
+                        <label for="rua">Rua</label>
+                        <input type="text" id="rua" placeholder="Informe o nome da rua">
+                        
+                        <label for="bairro">Bairro</label>
+                        <input type="text" id="bairro" placeholder="Informe o nome do bairro">
+                        
+                        <label for="cidade">Cidade</label>
+                        <input type="text" id="cidade" placeholder="Informe o nome da cidade com a UF">
+
+                        <button type="submit" class="register-btn">Registrar</button>
+                    </form>
+                </div>                                
+            </div>
+        </section>        
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="#"><img src="./img/icons/facebook.svg" alt="Facebook" class="social-icon"></a>
+                <a href="#"><img src="./img/icons/whatsapp.svg" alt="Whatsapp" class="social-icon"></a>
+                <a href="#"><img src="./img/icons/twitter-x.svg" alt="X" class="social-icon"></a>
+                <a href="#"><img src="./img/icons/instagram.svg" alt="Instagram" class="social-icon"></a>
+            </div>            
+        </div>
+        <div class="footer-bottom">
+            <p>&copy;Copyright - Lightborn 2024. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

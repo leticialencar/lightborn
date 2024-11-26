@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central de ajuda</title>
+    
+    <link rel="stylesheet" href="./css/help_center.css">
+    <link rel="stylesheet" href="./css/responsive/responsive-help_center.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./img/logo.png" alt="Logo">
+        </div>
+        <div class="icons">
+            <a href="./index.html">
+                <img src="./img/icons/back.svg" alt="Voltar">
+              </a>
+            <a href="index.html">
+                <img src="./img/icons/home.svg" alt="Início">
+            </a>
+            <div class="notification">
+                <img src="./img/icons/bell.svg" alt="Notificações">
+                <div class="tooltip">
+                    Você não possui notificações
+                </div>
+            </div>
+            <a href="./login.html">
+            <img src="./img/icons/profile.svg" alt="Usuário">
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="help-section">
+            <div class="help-content">
+                <h2>Ajuda</h2>
+                <p>Bem-vindo à nossa central de ajuda! Aqui você encontra informações sobre como utilizamos tecnologias inteligentes para monitorar e melhorar a iluminação pública. Confira as perguntas frequentes abaixo ou envie sua dúvida.</p>
+                <ul class="faq">
+                    <li><strong>Como funciona o monitoramento da iluminação?</strong> Utilizamos sensores para identificar falhas e sistemas de comunicação para enviar alertas automaticamente.</li>
+                    <li><strong>O que fazer em caso de falha na iluminação?</strong> Utilize o campo abaixo para reportar problemas específicos. Nossa equipe irá verificar e resolver o mais rápido possível.</li>
+                    <li><strong>Quais tecnologias são utilizadas?</strong> Trabalhamos com sistemas GSM, Wi-Fi e Ethernet para manter a eficiência do serviço.</li>
+                </ul>
+            </div>
+            <section class="complaint-form-section">
+                <h3>Envie uma reclamação ou dúvida</h3>
+                <form id="reclamationForm">
+                    <label for="userName">Seu Nome</label>
+                    <input type="text" id="userName" name="userName" placeholder="...">
+                    
+                    <label for="email">Seu Gmail</label>
+                    <input type="email" id="email" name="email" placeholder="...">
+                    
+                    <label for="problem">Descreva o problema:</label>
+                    <textarea id="problem" name="problem" placeholder="..."></textarea>
+                    
+                    <div class="form-buttons">
+                        <button type="button" class="cancel-btn">Cancelar</button>
+                        <button type="submit" class="submit-btn">Enviar</button>
+                    </div>
+                </form>
+            </section>            
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="#"><img src="./img/icons/facebook.svg" alt="Facebook" class="social-icon"></a>
+                <a href="#"><img src="./img/icons/whatsapp.svg" alt="Whatsapp" class="social-icon"></a>
+                <a href="#"><img src="./img/icons/twitter-x.svg" alt="X" class="social-icon"></a>
+                <a href="#"><img src="./img/icons/instagram.svg" alt="Instagram" class="social-icon"></a>
+            </div>            
+        </div>
+        <div class="footer-bottom">
+            <p>&copy;Copyright - Lightborn 2024. All rights reserved.</p>
+        </div>
+      </footer>
+      
+</body>
+</html>

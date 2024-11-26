@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Monsieur+La+Doulaise&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    text-decoration: none;
+}
+
+body {
+    font-family: "Nunito", serif;
+    margin: 0;
+    padding: 0;
+    background-color: #160018;
+    background-image: url('../img/fundo.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-blend-mode: multiply; 
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px; 
+    width: 100%;
+    max-width: 1400px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 140px;
+}
+
+header .icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.notification {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    color: #000;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    white-space: nowrap;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.notification:hover .tooltip {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+header .icons img {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+header .icons img:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
+}
+
+header .icons img:active {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 1));
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 20px 20px 20px; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.reports h1,
+.location h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.card {
+    background-color: rgba(205, 117, 177, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+    flex: 1;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.chart-container {
+    margin-bottom: 20px; 
+}
+
+.chart-image {
+    width: 100%;
+    max-width: 150px;
+    margin: 10px auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.card button {
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: #b10063;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
+
+.card button:hover {
+    background-color: #e60084;
+    transform: scale(1.05);
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+.location-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+}
+
+.map-container {
+    flex: 2;
+    padding-right: 10px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 420px; 
+    border: 2px solid #fff;
+    border-radius: 12px;
+}
+
+.address {
+    flex: 2;
+    background-color: rgba(205, 117, 177, 0.2); 
+    border-radius: 10px;
+    padding: 25px;
+    color: #e0e0e0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto; 
+}
+
+.address h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.address label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #bbb; 
+    margin-bottom: 6px;
+    display: block;
+}
+
+.address input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #444; 
+    border-radius: 6px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #e0e0e0; 
+    margin-bottom: 16px;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.address input:focus {
+    border-color: #d10074;
+    outline: none;
+}
+
+.register-btn {
+    margin-top: 10px;
+    font-family: "Nunito", serif;
+    background-color: #d10074;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 20px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+    background-color: #e60084;
+}
+
+.register-btn:active {
+    background-color: #b10063;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px; 
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 14px; 
+    text-decoration: none;
+    opacity: 0.7; 
+    transition: opacity 0.3s ease; 
+}
+
+.social-icons a:hover {
+    opacity: 1; 
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 12px; 
+    border-top: 1px solid #333;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer-bottom p {
+    color: #fff; 
+    margin: 0; 
+    font-size: 12px; 
+}
+

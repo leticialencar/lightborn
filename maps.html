@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acompanhamento</title>
+
+    <link rel="stylesheet" href="./css/maps.css">
+    <link rel="stylesheet" href="./css/responsive/responsive-maps.css">
+    
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="./img/logo.png" alt="Logo">
+        </div>
+        <div class="icons">
+            <a href="./index.html">
+                <img src="./img/icons/back.svg" alt="Voltar">
+              </a>
+            <a href="index.html">
+                <img src="./img/icons/home.svg" alt="Início">
+            </a>
+            <div class="notification">
+                <img src="./img/icons/bell.svg" alt="Notificações">
+                <div class="tooltip">
+                    Você não possui notificações
+                </div>
+            </div>
+            <a href="./login.html">
+                <img src="./img/icons/profile.svg" alt="Usuário">
+                </a>
+        </div>
+    </header>       
+
+    <main>
+        <section class="search-section">
+            <div class="search-wrapper">
+                <input type="search" placeholder="Pesquisar">
+                <img src="./img/icons/search.svg" class="search-icon">
+            </div>
+            <div class="filters-container">
+                <h3>Classifique por</h3>
+                <div class="filters">
+                    <button>
+                        Região
+                        <img src="./img/icons/arrow.svg" alt="Seta" class="filter-icon">
+                    </button>
+                    <button>
+                        Cidade
+                        <img src="./img/icons/arrow.svg" alt="Seta" class="filter-icon">
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="map">
+            <iframe 
+                src="https://www.google.com/maps?q=São+Miguel,+Juazeiro+do+Norte+-+CE&output=embed" 
+                width="100%" 
+                height="400" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </section>
+
+        <section class="report">
+            <a href="./reports.html">
+                <button>
+                    Gerar Relatório
+                    <img src="./img/icons/report.svg" class="report-icon">
+                </button>
+            </a>
+        </section>                     
+    </main>   
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="#"><img src="./img/icons/facebook.svg" alt="Facebook" class="social-icon"></a>
+                <a href="#"><img src="./img/icons/whatsapp.svg" alt="Whatsapp" class="social-icon"></a>
+                <a href="#"><img src="./img/icons/twitter-x.svg" alt="X" class="social-icon"></a>
+                <a href="#"><img src="./img/icons/instagram.svg" alt="Instagram" class="social-icon"></a>
+            </div>            
+        </div>
+        <div class="footer-bottom">
+            <p>&copy;Copyright - Lightborn 2024. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

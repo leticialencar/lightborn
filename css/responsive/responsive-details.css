@@ -1,0 +1,103 @@
+/* lg */
+@media (max-width: 1024px) {
+    .main-content {
+        width: 80%;
+        margin: 50px;
+    }
+
+    .cards{
+        width: 90%;
+        margin-left: 26px;
+    }
+
+    .bar-chart {
+        width: 80%;
+        margin-left: 30px;
+    }
+
+    .bar {
+        font-size: 0.55rem;
+    }
+
+    .pie-chart, .description {
+        flex: 1;
+        width: 100%;
+        margin-top: 20px; 
+    }
+
+    .pie-chart {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pie-chart h2 {
+        margin-bottom: 20px; 
+    }
+
+    .pie-chart img {
+        width: 200px; 
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .pie-chart, .description {
+        width: 80%; 
+        margin-top: 15px;
+        margin-left: 30px;
+    }
+
+    .description {
+        text-align: left; 
+    }
+
+    .charts {
+        flex-direction: column;
+    }
+}
+
+/* md */
+@media (max-width: 768px) {
+    .main-content {
+        width: 90%;
+        margin: 20px;
+    }
+
+    .pie-chart {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .pie-chart img {
+        width: 180px; 
+    }
+
+    .charts {
+        flex-direction: column;
+        gap: 20px; 
+    }
+
+    .description {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
+
+/* sm */
+@media (max-width: 640px) {
+    .main-content {
+        width: 100%;
+        margin: 10px;
+    }
+
+    .pie-chart img {
+        width: 150px; 
+    }
+
+    .charts {
+        flex-direction: column;
+    }
+
+    .description h2 {
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,41 @@
+/* 2xl */
+@media (max-width: 1536px) {
+    
+}
+
+/* xl */
+@media (max-width: 1280px) {
+
+}
+
+/* lg */
+@media (max-width: 1024px) {
+    .cards{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* md */
+@media (max-width: 768px) {
+    .location-container {
+        flex-direction: column; 
+    }
+    .map-container{
+        width: 105%;
+    }
+    
+    .address {
+        width: 92%;
+    }
+}
+   
+/* sm */
+@media (max-width: 640px) {
+
+}
+
+/* xs */
+@media (max-width: 475px) {
+    
+}
