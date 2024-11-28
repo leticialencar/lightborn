@@ -14,7 +14,7 @@
 }
 
 /* md */
-@media (max-width: 768px){
+@media (max-width: 768px) {
     .container{
         display: flex;
         flex-direction: column;
@@ -23,9 +23,6 @@
     h1,p,button{
         text-align: center;
         margin: auto;
-    }
-    .button{
-        margin: 0 auto;
     }
 }
    

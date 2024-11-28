@@ -8,11 +8,12 @@
 body{
     font-family: "Nunito", serif;
     background-color: #160018;
-    background-image: url(../img/background.png);
+    background-image: url(../img/Background.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
+    zoom: 0.9;
 }
 
 header {
@@ -82,16 +83,14 @@ header .icons img:active {
     transform: scale(1.1); 
     filter: drop-shadow(0 0 12px rgba(255, 255, 255, 1)); 
 }
-.container{
-    width: 100%;
-}
-.up, .help_center{
+
+.up, .help_center, .demonstration {
     display: flex;
     flex-direction: column;
     gap: 16px;
     background-color: black;
     width: 60%;
-    height: 260px;
+    height: 240px;
     margin: 20px 50px;
     border-radius: 20px;
     padding: 20px;
@@ -100,7 +99,6 @@ header .icons img:active {
 .up{
     background-image: url(../img/group.png);
     background-size: cover;
-
 }
 
 .help_center{
@@ -108,6 +106,13 @@ header .icons img:active {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.demonstration {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), 
+                url('../img/arduino-ide.jpg') no-repeat center center; 
+    background-size: cover;
+}
+
 
 h1{
     font-weight: 600;
@@ -122,7 +127,8 @@ p{
 }
 
 .up .button button,
-.help_center .button button {
+.help_center .button button,
+.demonstration .button button {
     font-family: 'Nunito', sans-serif;
     display: inline-flex;
     align-items: center;
@@ -139,8 +145,10 @@ p{
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 .up .button button img,
-.help_center .button button img {
+.help_center .button button img,
+.demonstration .button button img {
     width: 20px;
     height: 20px;
     transition: transform 0.3s ease, filter 0.3s ease;
@@ -148,14 +156,16 @@ p{
 }
 
 .up .button button:hover,
-.help_center .button button:hover {
+.help_center .button button:hover,
+.demonstration .button button:hover {
     background-color: #333;
     color: #fff;
     transform: scale(1.05);
 }
 
 .up .button button:hover img,
-.help_center .button button:hover img {
+.help_center .button button:hover img,
+.demonstration .button button:hover img {
     transform: rotate(20deg);
     filter: invert(1) brightness(2);
 }
@@ -165,7 +175,6 @@ p{
     color: #fff;
     text-align: center;
     padding: 20px 0;
-    width: 100%;
 }
 
 .footer-content {
